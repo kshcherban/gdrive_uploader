@@ -20,8 +20,6 @@ from oauth2client.file import Storage
 # Log only oauth2client errors
 logging.basicConfig(level="ERROR")
 
-# Path to the file to upload
-file_path = sys.argv[1]
 # Path to token json file, it should be in same directory as script
 token_file = sys.path[0] + '/auth_token.txt'
 
@@ -106,8 +104,11 @@ if __name__ == '__main__':
     if len(sys.argv) != 2:
         print("One file should be provided as argument")
         sys.exit(1)
+    else:
+# Path to the file to upload
+        file_path = sys.argv[1]
     try:
-        with open(token_file) as f: pass
+        with open(file_path) as f: pass
     except IOError as e:
         print(e)
         sys.exit(1)
