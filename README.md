@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Google Drive Uploader
 ===========
 
@@ -13,3 +14,9 @@ After file has been uploaded script prints download url.
   * Python >= 2.6
   * [google-api-python-client](http://code.google.com/p/google-api-python-client/)
   * httplib2
+=======
+gdrive_uploader
+===============
+
+Google Drive file uploader
+>>>>>>> b1b033ee1d499b41caa9c8d40b15e1f534abd317
