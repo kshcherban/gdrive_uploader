@@ -110,7 +110,7 @@ if __name__ == '__main__':
         with open(token_file) as f: pass
     except IOError as e:
         print(e)
-        sys.exit(1):
+        sys.exit(1)
 # Check if token file exists, if not create it by requesting authorization code
     try:
         with open(token_file) as f: pass

@@ -12,3 +12,4 @@ After file has been uploaded script prints download url.
 # Requirements
   * Python >= 2.6
   * [google-api-python-client](http://code.google.com/p/google-api-python-client/)
+  * httplib2
