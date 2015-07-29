@@ -47,7 +47,7 @@ def create_token_file(token_file):
         CLIENT_ID,
         CLIENT_SECRET,
         OAUTH_SCOPE,
-        REDIRECT_URI
+        redirect_uri=REDIRECT_URI
         )
     authorize_url = flow.step1_get_authorize_url()
     print('Go to the following link in your browser: ' + authorize_url)
