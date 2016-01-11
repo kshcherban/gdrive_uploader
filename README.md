@@ -4,7 +4,8 @@ Google Drive Uploader
 Simple script to upload files on Google Drive.
 
 # Description
-Script uses predefined [Drive APIs Client ID and Client Secret](https://developers.google.com/drive/quickstart-python#step_1_enable_the_drive_api).  
+Script uses predefined [Drive APIs Client ID and Client Secret](https://developers.google.com/drive/v2/web/quickstart/python#step_1_turn_on_the_api_name)
+
 It takes upload file as command line argument, uploads it and sets permissions that anyone who has download link can download the file.  
 After file has been uploaded script prints download url.
 
@@ -12,6 +13,14 @@ After file has been uploaded script prints download url.
   * Python >= 2.6
   * [google-api-python-client](http://code.google.com/p/google-api-python-client/)
   * python-httplib2
+
+# Configuration
+ - use the [wizard](https://console.developers.google.com/start/api?id=drive) to generate **client ID** and **client secret** strings (don't download `client_secret.json`). Choose **other** for **application type**.
+ - edit the script and modify the variables with the generated keys :
+```
+CLIENT_ID = 'xxx'
+CLIENT_SECRET = 'yyy'
+```
 
 # Example
     insider@laptop:~/Documents/scripts$ echo 'this is test' > test.txt

@@ -4,7 +4,6 @@
 # license: GPL v.2 or higher
 
 import sys
-import socket
 import logging
 import httplib2
 from mimetypes import guess_type
