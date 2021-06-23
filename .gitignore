@@ -33,3 +33,10 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Virtual environment
+.venv
+
+# Credentials
+credentials.json
+token.json
